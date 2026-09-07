@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design & Staging Journal | HAVEN & HEIR Home Staging</title>
+  <meta name="description" content="Expert insights on luxury home staging, real estate visual marketing, spatial psychology, and interior styling trends.">
+  <meta name="keywords" content="home staging blog, interior styling tips, real estate staging advice, home decor trends">
+  <meta name="author" content="HAVEN & HEIR Staging Studio">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon">
+          <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Home <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link">Home 1 – Main Landing</a>
+            <a href="home-2.html" class="dropdown-link">Home 2 – Interior Styling</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link active">Blog</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Drawer Controls -->
+        <div class="nav-mobile-actions">
+          <div class="mobile-controls-row">
+            <button class="nav-icon-btn theme-toggle-btn" id="mobileThemeToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-moon"></i> <span>Theme</span>
+            </button>
+            <button class="nav-icon-btn rtl-toggle-btn" id="mobileRtlToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-globe"></i> <span>RTL</span>
+            </button>
+          </div>
+          <a href="login.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+            <i class="fa-regular fa-user"></i> Client Sign In
+          </a>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 4px;">
+            <i class="fa-regular fa-calendar-check"></i> Get a Consultation
+          </a>
+        </div>
+      </nav>
+
+      <!-- Right Navbar Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light Mode) -->
+        <button class="nav-icon-btn theme-toggle-btn" id="navThemeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- RTL / LTR Layout Switcher -->
+        <button class="nav-icon-btn rtl-toggle-btn" id="navRtlToggle" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em;">RTL</span>
+        </button>
+
+        <!-- Login / Client Portal Button -->
+        <a href="login.html" class="nav-login-btn" title="Client Sign In" aria-label="Client Sign In">
+          <i class="fa-regular fa-user"></i>
+          <span>Sign In</span>
+        </a>
+
+        <!-- Consultation CTA Button -->
+        <a href="contact.html" class="btn btn-primary nav-cta-btn">
+          <i class="fa-regular fa-calendar-check"></i> <span>Get a Consultation</span>
+        </a>
+        
+        <!-- Mobile Toggle Hamburger Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. INNER HERO (With Luxury Photographic Background)
+       ========================================================================== -->
+  <section class="inner-hero inner-hero-blog">
+    <div class="container">
+      <span class="section-subtitle centered">Editorial Journal</span>
+      <h1>Staging & Interior Insights</h1>
+      <p class="lead" style="max-width: 650px; margin: 0 auto;">
+        Proven strategies, design psychology, and real-estate staging principles to help your property command peak attention.
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span class="active">Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. BLOG MAIN CONTENT
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+
+      <!-- Featured Spotlight Article -->
+      <div class="featured-article-card reveal-fade">
+        <a href="blog-details.html?id=staging-increase-buyer-interest" class="featured-article-img" aria-label="Read featured article: 7 Ways Home Staging Can Increase Buyer Interest">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Featured article luxury staging">
+        </a>
+        <div class="featured-article-content">
+          <div class="blog-meta">
+            <span class="category"><i class="fa-solid fa-tag"></i> Home Staging</span>
+            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+            <span><i class="fa-regular fa-calendar"></i> Oct 12, 2026</span>
+          </div>
+          <h2><a href="blog-details.html?id=staging-increase-buyer-interest" style="color: inherit; text-decoration: none;">7 Ways Home Staging Can Increase Buyer Interest</a></h2>
+          <p>
+            Staging is far more than decorating—it is strategic visual merchandising designed to trigger emotional buyer psychology, highlight architectural scale, and create bidding urgency.
+          </p>
+          <a href="blog-details.html?id=staging-increase-buyer-interest" class="btn btn-primary" style="margin-top: 10px;">
+            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Search & Category Filter Toolbar -->
+      <div class="blog-toolbar reveal-fade">
+        <!-- Category Filter Pills -->
+        <div class="portfolio-filter-nav" style="margin-bottom: 0;">
+          <button class="filter-btn blog-filter-btn active" data-category="all">All Articles</button>
+          <button class="filter-btn blog-filter-btn" data-category="staging">Home Staging</button>
+          <button class="filter-btn blog-filter-btn" data-category="styling">Interior Styling</button>
+          <button class="filter-btn blog-filter-btn" data-category="realestate">Real Estate</button>
+          <button class="filter-btn blog-filter-btn" data-category="decor">Home Décor</button>
+          <button class="filter-btn blog-filter-btn" data-category="designtips">Design Tips</button>
+        </div>
+
+        <!-- Live Search Box -->
+        <div class="blog-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="blogSearchInput" class="blog-search-input" placeholder="Search articles, keywords..." aria-label="Search blog posts">
+        </div>
+      </div>
+
+      <!-- No Results Feedback -->
+      <div id="blogNoResults" style="display: none; text-align: center; padding: 60px 20px;">
+        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 16px;"><i class="fa-solid fa-book-open"></i></div>
+        <h3>No matching articles found</h3>
+        <p>Try searching for different keywords such as "staging", "photography", "psychology", or clear the filter.</p>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+        
+        <!-- Blog Card 1 -->
+        <article class="blog-card reveal-fade delay-1" data-category="realestate">
+          <a href="blog-details.html?id=photography-prep" class="blog-card-img" aria-label="Read article: How to Prepare Your Home for Real Estate Photography">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Camera set up in styled living room">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Real Estate</span>
+              <span><i class="fa-regular fa-calendar"></i> Sep 28, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=photography-prep">How to Prepare Your Home for Real Estate Photography</a></h3>
+            <p>Master the crucial lighting, reflection, and decluttering techniques that ensure your property looks pristine in digital MLS galleries.</p>
+            <a href="blog-details.html?id=photography-prep" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card reveal-fade delay-2" data-category="styling">
+          <a href="blog-details.html?id=psychology-living-room" class="blog-card-img" aria-label="Read article: The Psychology Behind a Well-Styled Living Room">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Well styled warm living room">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Interior Styling</span>
+              <span><i class="fa-regular fa-calendar"></i> Sep 19, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=psychology-living-room">The Psychology Behind a Well-Styled Living Room</a></h3>
+            <p>Understand how sightlines, organic textures, and focal orientation stimulate positive subconscious comfort in prospective buyers.</p>
+            <a href="blog-details.html?id=psychology-living-room" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card reveal-fade delay-3" data-category="staging">
+          <a href="blog-details.html?id=vacant-vs-occupied" class="blog-card-img" aria-label="Read article: Vacant vs Occupied Home Staging">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Vacant home before staging">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Home Staging</span>
+              <span><i class="fa-regular fa-calendar"></i> Sep 04, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=vacant-vs-occupied">Vacant vs Occupied Home Staging: Which Is Right for You?</a></h3>
+            <p>An honest comparative guide analyzing pricing, lead times, emotional impact, and logistical requirements for both staging types.</p>
+            <a href="blog-details.html?id=vacant-vs-occupied" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="blog-card reveal-fade delay-1" data-category="decor">
+          <a href="blog-details.html?id=color-palettes-2026" class="blog-card-img" aria-label="Read article: Color Palettes That Sell">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Neutral toned luxury furniture">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Home Décor</span>
+              <span><i class="fa-regular fa-calendar"></i> Aug 22, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=color-palettes-2026">Color Palettes That Sell: Strategic Neutrals for 2026 Listings</a></h3>
+            <p>Why warm ivory, soft taupes, and muted sage outperform cold grays and clinical whites in modern luxury buyer valuations.</p>
+            <a href="blog-details.html?id=color-palettes-2026" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="blog-card reveal-fade delay-2" data-category="designtips">
+          <a href="blog-details.html?id=curb-appeal-checklist" class="blog-card-img" aria-label="Read article: Creating Curb Appeal">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Luxury home exterior terrace and entrance">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Design Tips</span>
+              <span><i class="fa-regular fa-calendar"></i> Aug 14, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=curb-appeal-checklist">Creating Curb Appeal: The Essential Pre-Listing Checklist</a></h3>
+            <p>First impressions happen at the curb. Essential tips for front porticos, outdoor lighting, and potted topiary arrangements.</p>
+            <a href="blog-details.html?id=curb-appeal-checklist" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="blog-card reveal-fade delay-3" data-category="styling">
+          <a href="blog-details.html?id=kitchen-vignette-art" class="blog-card-img" aria-label="Read article: The Art of the Kitchen Vignette">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Luxury kitchen marble counter vignette">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="category">Interior Styling</span>
+              <span><i class="fa-regular fa-calendar"></i> Jul 30, 2026</span>
+            </div>
+            <h3><a href="blog-details.html?id=kitchen-vignette-art">The Art of the Kitchen Vignette: Styling Culinary Spaces</a></h3>
+            <p>Transform functional kitchen islands into warm lifestyle centerpieces using artisanal ceramics, linen runners, and fresh herbs.</p>
+            <a href="blog-details.html?id=kitchen-vignette-art" class="btn-link-arrow">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination-wrapper reveal-fade">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn" aria-label="Next page"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. FINAL CTA BANNER
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section">
+    <div class="container">
+      <div class="cta-banner-wrap reveal-fade">
+        <div class="cta-content">
+          <span class="section-subtitle" style="color: #D4BA94;">Ready to List?</span>
+          <h2>Make Your Property the Market Highlight</h2>
+          <p>
+            Let our design directors craft a tailored staging package that accelerates your listing success.
+          </p>
+          <div class="cta-btn-group">
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fa-regular fa-calendar-check"></i> Book Consultation
+            </a>
+            <a href="services.html" class="btn btn-outline-light">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging">
+            <div class="brand-icon">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <div>
+              <span class="brand-title">HAVEN & HEIR</span>
+              <span class="brand-subtitle">Home Staging & Styling</span>
+            </div>
+          </a>
+          <p>
+            Bespoke home staging and luxury interior styling services designed to reveal every property's ultimate emotional and financial potential.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html?id=vacant"><i class="fa-solid fa-angle-right"></i> Vacant Staging</a></li>
+            <li><a href="service-details.html?id=rental"><i class="fa-solid fa-angle-right"></i> Furniture Rental</a></li>
+            <li><a href="service-details.html?id=interior"><i class="fa-solid fa-angle-right"></i> Interior Styling</a></li>
+            <li><a href="service-details.html?id=photography"><i class="fa-solid fa-angle-right"></i> Photography Styling</a></li>
+            <li><a href="service-details.html?id=openhouse"><i class="fa-solid fa-angle-right"></i> Open House Styling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-info">
+            <li><i class="fa-solid fa-phone"></i> <span>+1 (800) 456-7890</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>inquire@havenandheir.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span>742 Evergreen Terrace, Suite 400, NY 10012</span></li>
+          </ul>
+          <form class="newsletter-form footer-subscribe-form" style="margin-top: 20px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to HAVEN & HEIR!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for subscription">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 HAVEN & HEIR Home Staging & Styling. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-preferences.html">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       6. SCROLL TO TOP BUTTON
+       ========================================================================== -->
+  <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog-data.js"></script>
+  <script src="js/filter-search.js"></script>
+</body>
+</html>

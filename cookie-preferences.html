@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Preferences | HAVEN & HEIR Luxury Home Staging</title>
+  <meta name="description" content="Manage your cookie preferences and privacy settings on the HAVEN & HEIR website.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- Minimal Brand Header -->
+  <header class="minimal-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon">
+          <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+      <div class="minimal-header-actions">
+        <button class="nav-icon-btn theme-toggle-btn" id="navThemeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" id="navRtlToggle" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em;">RTL</span>
+        </button>
+        <a href="index.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Clean Cookie Preferences Main Content (No Images) -->
+  <main class="policy-page-wrap">
+    <div class="container">
+      <div class="policy-card-clean">
+        
+        <header class="policy-header">
+          <h1 class="policy-title">Cookie Preferences</h1>
+          <span class="policy-date">Control your privacy, analytics, and personalization settings</span>
+        </header>
+
+        <div class="policy-text">
+          
+          <div class="policy-section">
+            <p>
+              We use cookies and local browser storage to optimize site functionality, remember your theme and layout preferences (such as Dark Mode and RTL), and understand how visitors interact with our staging collections. You can customize your preferences below.
+            </p>
+          </div>
+
+          <!-- Interactive Cookie Category Toggles -->
+          <div class="cookie-card-grid">
+            
+            <!-- 1. Strictly Necessary Cookies -->
+            <div class="cookie-card">
+              <div class="cookie-card-info">
+                <h4>
+                  <i class="fa-solid fa-shield-halved" style="color: var(--accent);"></i> Strictly Necessary Cookies
+                  <span class="cookie-badge required">Always Active</span>
+                </h4>
+                <p>
+                  Essential for website navigation, user authentication, secure consultation booking, and saving your Dark Mode and RTL layout settings. These cannot be disabled.
+                </p>
+              </div>
+              <label class="cookie-toggle">
+                <input type="checkbox" checked disabled aria-label="Strictly Necessary Cookies (Always Active)">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+
+            <!-- 2. Performance & Analytics Cookies -->
+            <div class="cookie-card">
+              <div class="cookie-card-info">
+                <h4>
+                  <i class="fa-solid fa-chart-simple" style="color: var(--accent);"></i> Performance & Analytics
+                  <span class="cookie-badge">Optional</span>
+                </h4>
+                <p>
+                  Help us measure anonymous visitor engagement, popular staging articles, and page load speeds to continuously improve our design platform.
+                </p>
+              </div>
+              <label class="cookie-toggle">
+                <input type="checkbox" id="cookieAnalytics" checked aria-label="Toggle Performance & Analytics Cookies">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+
+            <!-- 3. Functional & Experience Cookies -->
+            <div class="cookie-card">
+              <div class="cookie-card-info">
+                <h4>
+                  <i class="fa-solid fa-sliders" style="color: var(--accent);"></i> Functional & Personalization
+                  <span class="cookie-badge">Optional</span>
+                </h4>
+                <p>
+                  Enable enhanced features such as pre-filling selected services in consultation forms and remembering interactive filter selections.
+                </p>
+              </div>
+              <label class="cookie-toggle">
+                <input type="checkbox" id="cookieFunctional" checked aria-label="Toggle Functional & Personalization Cookies">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+
+            <!-- 4. Marketing & Inspiration Cookies -->
+            <div class="cookie-card">
+              <div class="cookie-card-info">
+                <h4>
+                  <i class="fa-solid fa-bullhorn" style="color: var(--accent);"></i> Marketing & Inspiration
+                  <span class="cookie-badge">Optional</span>
+                </h4>
+                <p>
+                  Used to deliver relevant home staging case studies, curated interior lookbooks, and seasonal portfolio announcements.
+                </p>
+              </div>
+              <label class="cookie-toggle">
+                <input type="checkbox" id="cookieMarketing" aria-label="Toggle Marketing & Inspiration Cookies">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+
+          </div>
+
+          <!-- Buttons Group -->
+          <div style="display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap;">
+            <button type="button" id="saveCookieBtn" class="btn btn-primary">
+              <i class="fa-solid fa-check"></i> Save My Preferences
+            </button>
+            <button type="button" id="acceptAllCookieBtn" class="btn btn-secondary">
+              Accept All Cookies
+            </button>
+          </div>
+
+          <div id="cookieSavedAlert" style="display: none; margin-top: 20px;" class="policy-notice-box">
+            <p><i class="fa-solid fa-circle-check" style="color: #2E7D32; margin-right: 6px;"></i> <strong>Preferences Saved:</strong> Your cookie settings have been updated and stored for this browser.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Clean Minimal Footer -->
+  <footer style="padding: 24px 0; border-top: 1px solid var(--border-light); background-color: var(--bg-card); text-align: center; font-size: 0.88rem; color: var(--text-muted);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+      <div>&copy; 2026 HAVEN & HEIR Home Staging & Styling. All Rights Reserved.</div>
+      <div style="display: flex; gap: 16px;">
+        <a href="privacy-policy.html" style="color: var(--text-secondary);">Privacy Policy</a>
+        <a href="terms-of-service.html" style="color: var(--text-secondary);">Terms of Service</a>
+        <a href="cookie-preferences.html" style="color: var(--accent); font-weight: 600;">Cookie Preferences</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const saveBtn = document.getElementById('saveCookieBtn');
+      const acceptAllBtn = document.getElementById('acceptAllCookieBtn');
+      const alertBox = document.getElementById('cookieSavedAlert');
+      const analyticsToggle = document.getElementById('cookieAnalytics');
+      const functionalToggle = document.getElementById('cookieFunctional');
+      const marketingToggle = document.getElementById('cookieMarketing');
+
+      // Load saved state
+      const savedPrefs = JSON.parse(localStorage.getItem('haven_cookie_prefs') || 'null');
+      if (savedPrefs) {
+        if (analyticsToggle) analyticsToggle.checked = !!savedPrefs.analytics;
+        if (functionalToggle) functionalToggle.checked = !!savedPrefs.functional;
+        if (marketingToggle) marketingToggle.checked = !!savedPrefs.marketing;
+      }
+
+      const showConfirmation = () => {
+        if (alertBox) {
+          alertBox.style.display = 'block';
+          setTimeout(() => {
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 50);
+        }
+      };
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          const prefs = {
+            essential: true,
+            analytics: analyticsToggle ? analyticsToggle.checked : false,
+            functional: functionalToggle ? functionalToggle.checked : false,
+            marketing: marketingToggle ? marketingToggle.checked : false,
+            savedAt: new Date().toISOString()
+          };
+          localStorage.setItem('haven_cookie_prefs', JSON.stringify(prefs));
+          showConfirmation();
+        });
+      }
+
+      if (acceptAllBtn) {
+        acceptAllBtn.addEventListener('click', () => {
+          if (analyticsToggle) analyticsToggle.checked = true;
+          if (functionalToggle) functionalToggle.checked = true;
+          if (marketingToggle) marketingToggle.checked = true;
+
+          const prefs = {
+            essential: true,
+            analytics: true,
+            functional: true,
+            marketing: true,
+            savedAt: new Date().toISOString()
+          };
+          localStorage.setItem('haven_cookie_prefs', JSON.stringify(prefs));
+          showConfirmation();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

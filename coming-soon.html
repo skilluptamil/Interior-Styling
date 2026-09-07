@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | HAVEN & HEIR Luxury Home Staging</title>
+  <meta name="description" content="HAVEN & HEIR is preparing something extraordinary. Our luxury showroom and private catalog will launch soon.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- Minimal Brand Header without Public Navbar (as requested) -->
+  <header class="minimal-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+      <a href="index.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.88rem;">
+        <i class="fa-solid fa-house"></i> Home
+      </a>
+    </div>
+  </header>
+
+  <!-- Coming Soon Main Content -->
+  <main class="standalone-hero-wrap">
+    <div class="standalone-content reveal-fade">
+      <span class="section-subtitle centered">Under Strategic Refinement</span>
+      <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.5rem); margin-bottom: 18px;">Curating Something Extraordinary.</h1>
+      <p class="lead" style="max-width: 580px; margin: 0 auto 36px;">
+        Our new private furniture showroom collection, interactive 3D floorplan visualizer, and luxury catalog are launching shortly.
+      </p>
+
+      <!-- Live Dynamic Countdown Timer -->
+      <div class="countdown-grid">
+        <div class="countdown-box">
+          <div class="num" id="cd-days">18</div>
+          <div class="label">Days</div>
+        </div>
+        <div class="countdown-box">
+          <div class="num" id="cd-hours">09</div>
+          <div class="label">Hours</div>
+        </div>
+        <div class="countdown-box">
+          <div class="num" id="cd-minutes">42</div>
+          <div class="label">Minutes</div>
+        </div>
+        <div class="countdown-box">
+          <div class="num" id="cd-seconds">15</div>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Notify Me Form -->
+      <div style="max-width: 460px; margin: 0 auto 40px;">
+        <form onsubmit="event.preventDefault(); alert('Thank you! You will be the first VIP to receive our private catalog invitation.'); this.reset();" style="display: flex; gap: 8px;">
+          <input type="email" class="form-control" placeholder="Enter your VIP broker email..." required style="background-color: var(--bg-card);">
+          <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+            <i class="fa-solid fa-bell"></i> Notify Me
+          </button>
+        </form>
+      </div>
+
+      <!-- Social Links -->
+      <div style="display: flex; justify-content: center; gap: 14px;">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" style="background-color: var(--bg-card); color: var(--text-primary);" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" style="background-color: var(--bg-card); color: var(--text-primary);" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" style="background-color: var(--bg-card); color: var(--text-primary);" aria-label="Pinterest">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" style="background-color: var(--bg-card); color: var(--text-primary);" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src="js/main.js"></script>
+  <script>
+    // Live Countdown Timer Engine
+    function startCountdown() {
+      // Set target date 20 days from now
+      const targetDate = new Date().getTime() + (20 * 24 * 60 * 60 * 1000);
+
+      const update = () => {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) return;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        const format = (n) => n < 10 ? '0' + n : n;
+
+        const elDays = document.getElementById('cd-days');
+        const elHours = document.getElementById('cd-hours');
+        const elMinutes = document.getElementById('cd-minutes');
+        const elSeconds = document.getElementById('cd-seconds');
+
+        if (elDays) elDays.textContent = format(days);
+        if (elHours) elHours.textContent = format(hours);
+        if (elMinutes) elMinutes.textContent = format(minutes);
+        if (elSeconds) elSeconds.textContent = format(seconds);
+      };
+
+      update();
+      setInterval(update, 1000);
+    }
+    document.addEventListener('DOMContentLoaded', startCountdown);
+  </script>
+</body>
+</html>

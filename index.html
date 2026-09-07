@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAVEN & HEIR | Luxury Home Staging & Interior Styling Services</title>
+  <meta name="description" content="Professional home staging and luxury interior styling designed to maximize property value, captivate prospective buyers, and sell homes faster.">
+  <meta name="keywords" content="home staging, interior styling, property presentation, vacant home staging, luxury real estate staging, furniture rental, interior designer">
+  <meta name="author" content="HAVEN & HEIR Staging Studio">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="HAVEN & HEIR | Luxury Home Staging & Interior Styling">
+  <meta property="og:description" content="Transforming spaces into unforgettable homes buyers fall in love with. Discover our bespoke staging & styling solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <!-- Brand Monogram & Name -->
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon">
+          <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <!-- Home Dropdown -->
+        <div class="nav-item dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle active" aria-haspopup="true" aria-expanded="false">
+            Home <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link active">Home 1 – Main Landing</a>
+            <a href="home-2.html" class="dropdown-link">Home 2 – Interior Styling</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Drawer Controls -->
+        <div class="nav-mobile-actions">
+          <div class="mobile-controls-row">
+            <button class="nav-icon-btn theme-toggle-btn" id="mobileThemeToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-moon"></i> <span>Theme</span>
+            </button>
+            <button class="nav-icon-btn rtl-toggle-btn" id="mobileRtlToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-globe"></i> <span>RTL</span>
+            </button>
+          </div>
+          <a href="login.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+            <i class="fa-regular fa-user"></i> Client Sign In
+          </a>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 4px;">
+            <i class="fa-regular fa-calendar-check"></i> Get a Consultation
+          </a>
+        </div>
+      </nav>
+
+      <!-- Right Navbar Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light Mode) -->
+        <button class="nav-icon-btn theme-toggle-btn" id="navThemeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- RTL / LTR Layout Switcher -->
+        <button class="nav-icon-btn rtl-toggle-btn" id="navRtlToggle" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em;">RTL</span>
+        </button>
+
+        <!-- Login / Client Portal Button -->
+        <a href="login.html" class="nav-login-btn" title="Client Sign In" aria-label="Client Sign In">
+          <i class="fa-regular fa-user"></i>
+          <span>Sign In</span>
+        </a>
+
+        <!-- Consultation CTA Button -->
+        <a href="contact.html" class="btn btn-primary nav-cta-btn">
+          <i class="fa-regular fa-calendar-check"></i> <span>Get a Consultation</span>
+        </a>
+        
+        <!-- Mobile Toggle Hamburger Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. HERO SECTION (Conversion Focused)
+       ========================================================================== -->
+  <section class="hero-home1">
+    <div class="container">
+      <div class="hero-content reveal-fade">
+        <div class="hero-badge">
+          <i class="fa-solid fa-gem"></i> Premier Property Styling & Staging
+        </div>
+        <h1>Transform Every Space Into a Home Buyers Love.</h1>
+        <p class="lead">
+          Professional home staging and interior styling designed to showcase your property's potential, create emotional connection, and make every room stand out.
+        </p>
+        <div class="hero-btn-group">
+          <a href="contact.html" class="btn btn-primary">
+            Get a Consultation <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#portfolioSection" class="btn btn-outline-light">
+            Explore Our Work
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. BEFORE & AFTER SECTION
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section" id="beforeAfterSection">
+    <div class="container">
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Visual Transformations</span>
+        <h2 class="section-title">From Empty to Extraordinary</h2>
+        <p class="section-desc">
+          See the tangible power of strategic spatial staging. Slide across to reveal how we turn cold, vacant layouts into warm, high-value luxury residences.
+        </p>
+      </div>
+
+      <!-- Interactive Comparison Slider -->
+      <div class="before-after-wrapper reveal-fade">
+        <div class="before-after-container">
+          <!-- Before State (Top Layer Clamped) -->
+          <div class="before-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85" alt="Vacant living room before home staging">
+            <span class="ba-badge badge-before">Before Staging (Vacant)</span>
+          </div>
+
+          <!-- After State (Base Layer) -->
+          <div class="after-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85" alt="Styled luxury living room after home staging">
+            <span class="ba-badge badge-after">After Staging (Fully Styled)</span>
+          </div>
+
+          <!-- Draggable Divider Handle -->
+          <div class="ba-slider-handle" aria-label="Drag to compare before and after styling">
+            <div class="ba-handle-line"></div>
+            <div class="ba-handle-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transformation Highlights Meta -->
+      <div class="transformation-meta reveal-fade">
+        <div class="meta-item">
+          <h5>Property Type</h5>
+          <p>Luxury Penthouse Residence</p>
+        </div>
+        <div class="meta-item">
+          <h5>Staging Duration</h5>
+          <p>48 Hours Complete Setup</p>
+        </div>
+        <div class="meta-item">
+          <h5>Market Outcome</h5>
+          <p>Sold in 6 Days (14% Over List)</p>
+        </div>
+        <div class="meta-item">
+          <h5>Styling Scope</h5>
+          <p>Full Living, Dining & Terrace Curation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SERVICES PREVIEW SECTION
+       ========================================================================== -->
+  <section class="section-spacing" id="servicesPreview">
+    <div class="container">
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Tailored Expertise</span>
+        <h2 class="section-title">Our Styling Services</h2>
+        <p class="section-desc">
+          Whether preparing an empty estate or revitalizing an occupied luxury apartment, our end-to-end styling services are crafted to captivate premium buyers.
+        </p>
+      </div>
+
+      <div class="services-grid-4">
+        <!-- Service Card 1 -->
+        <div class="service-card reveal-fade delay-1">
+          <a href="service-details.html?id=vacant" class="service-card-img" aria-label="View Vacant Home Staging details">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Vacant Home Staging luxury interior">
+            <span class="service-card-tag">Full Staging</span>
+          </a>
+          <div class="service-card-body">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <h3><a href="service-details.html?id=vacant" style="color: inherit; text-decoration: none;">Vacant Home Staging</a></h3>
+            <p>Transform empty properties with carefully selected furniture, designer rugs, artwork, and accessories that define purpose for every square foot.</p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-check"></i> Complete room layout curation</li>
+              <li><i class="fa-solid fa-check"></i> Premium designer furniture</li>
+            </ul>
+            <a href="service-details.html?id=vacant" class="btn-link-arrow">
+              Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card reveal-fade delay-2">
+          <a href="service-details.html?id=rental" class="service-card-img" aria-label="View Furniture Rental details">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Furniture Rental pieces in modern showroom">
+            <span class="service-card-tag">Rental Inventory</span>
+          </a>
+          <div class="service-card-body">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-chair"></i>
+            </div>
+            <h3><a href="service-details.html?id=rental" style="color: inherit; text-decoration: none;">Furniture Rental</a></h3>
+            <p>Provide stylish, showroom-grade furniture packages for property viewings, VIP open houses, and editorial real-estate marketing campaigns.</p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-check"></i> Flexible lease terms</li>
+              <li><i class="fa-solid fa-check"></i> White-glove delivery & install</li>
+            </ul>
+            <a href="service-details.html?id=rental" class="btn-link-arrow">
+              Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card reveal-fade delay-3">
+          <a href="service-details.html?id=interior" class="service-card-img" aria-label="View Interior Styling details">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Interior Styling soft furnishings and lighting">
+            <span class="service-card-tag">Redesign & Styling</span>
+          </a>
+          <div class="service-card-body">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3><a href="service-details.html?id=interior" style="color: inherit; text-decoration: none;">Interior Styling</a></h3>
+            <p>Enhance existing spaces through strategic furniture placement, accent pillows, ambient lighting, architectural greenery, and vignette styling.</p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-check"></i> Spatial flow optimization</li>
+              <li><i class="fa-solid fa-check"></i> Curated luxury accents</li>
+            </ul>
+            <a href="service-details.html?id=interior" class="btn-link-arrow">
+              Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card reveal-fade delay-4">
+          <a href="service-details.html?id=photography" class="service-card-img" aria-label="View Photography-Ready Styling details">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Photography ready styled living space">
+            <span class="service-card-tag">MLS Prep</span>
+          </a>
+          <div class="service-card-body">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h3><a href="service-details.html?id=photography" style="color: inherit; text-decoration: none;">Photography-Ready Styling</a></h3>
+            <p>Prepare properties to look their absolute best for professional real-estate photography, 4K video walk-throughs, and virtual tours.</p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-check"></i> Camera angle composition</li>
+              <li><i class="fa-solid fa-check"></i> Lighting and reflection tuning</li>
+            </ul>
+            <a href="service-details.html?id=photography" class="btn-link-arrow">
+              Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="services.html" class="btn btn-secondary">
+          <i class="fa-solid fa-layer-group"></i> View All Services & Packages
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. WHY CHOOSE US (Split Layout)
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section">
+    <div class="container">
+      <div class="split-layout">
+        <!-- Image Column with Floating Experience Badge -->
+        <div class="split-image-col reveal-fade">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Master interior stylist preparing a luxury home" class="split-main-image">
+          <div class="split-floating-experience">
+            <div class="num">10+</div>
+            <div class="desc">Years of Styling Excellence</div>
+          </div>
+        </div>
+
+        <!-- Text & Features Column -->
+        <div class="split-text-col reveal-fade delay-2">
+          <span class="section-subtitle">The HAVEN & HEIR Distinction</span>
+          <h2 class="section-title">Designed to Make Your Property Stand Out</h2>
+          <p class="section-desc">
+            We don't just stage rooms; we craft an aspirational lifestyle narrative that connects emotionally with prospective buyers from the moment they step through the door.
+          </p>
+
+          <div class="features-list-styled">
+            <div class="feature-list-item">
+              <div class="feature-item-icon">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <div class="feature-item-content">
+                <h4>Curated Furniture & Décor</h4>
+                <p>Exclusive access to private designer inventory hand-selected to elevate each architectural nuance.</p>
+              </div>
+            </div>
+
+            <div class="feature-list-item">
+              <div class="feature-item-icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <div class="feature-item-content">
+                <h4>Professional Styling</h4>
+                <p>Accredited master interior stylists who understand demographic buyer profiles and market psychology.</p>
+              </div>
+            </div>
+
+            <div class="feature-list-item">
+              <div class="feature-item-icon">
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <div class="feature-item-content">
+                <h4>Photography-Ready Spaces</h4>
+                <p>Composed to look stunning in MLS photos, social reels, and high-gloss real estate publications.</p>
+              </div>
+            </div>
+
+            <div class="feature-list-item">
+              <div class="feature-item-icon">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <div class="feature-item-content">
+                <h4>Faster Property Presentation</h4>
+                <p>Seamless 24-48 hour turnaround times to meet tight listing launches and broker open-house deadlines.</p>
+              </div>
+            </div>
+
+            <div class="feature-list-item">
+              <div class="feature-item-icon">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <div class="feature-item-content">
+                <h4>Attention to Every Detail</h4>
+                <p>From organic linens and subtle scents to ambient lighting, every corner is meticulously polished.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-primary">
+            Discover Our Story <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. STATISTICS SECTION (Animated Counters)
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat Item 1 -->
+        <div class="stat-item reveal-fade delay-1">
+          <div class="stat-num-wrap">
+            <span class="stat-number" data-target="250">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Properties Styled</div>
+          <div class="stat-sub">Across luxury estates & lofts</div>
+        </div>
+
+        <!-- Stat Item 2 -->
+        <div class="stat-item reveal-fade delay-2">
+          <div class="stat-num-wrap">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Rooms Transformed</div>
+          <div class="stat-sub">Curated with bespoke decor</div>
+        </div>
+
+        <!-- Stat Item 3 -->
+        <div class="stat-item reveal-fade delay-3">
+          <div class="stat-num-wrap">
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Client Satisfaction</div>
+          <div class="stat-sub">Realtors & homeowner reviews</div>
+        </div>
+
+        <!-- Stat Item 4 -->
+        <div class="stat-item reveal-fade delay-4">
+          <div class="stat-num-wrap">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Years Experience</div>
+          <div class="stat-sub">Setting industry standards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. FEATURED PORTFOLIO GRID
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section" id="portfolioSection">
+    <div class="container">
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Curated Showcase</span>
+        <h2 class="section-title">Spaces That Speak for Themselves</h2>
+        <p class="section-desc">
+          Explore our recently staged properties and custom interior styling projects across luxury residences and modern architectural homes.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="portfolio-filter-nav reveal-fade">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="living">Living Rooms</button>
+        <button class="filter-btn" data-filter="bedroom">Primary Suites</button>
+        <button class="filter-btn" data-filter="dining">Dining & Kitchens</button>
+        <button class="filter-btn" data-filter="villa">Luxury Estates</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card reveal-fade delay-1" data-category="living">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="The Bellevue Penthouse living room staging">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Living Room Staging</span>
+              <h4>The Bellevue Penthouse</h4>
+              <p>Minimalist Japanese-Scandinavian fusion</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card reveal-fade delay-2" data-category="bedroom">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Oakwood Villa primary bedroom staging">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Primary Suite</span>
+              <h4>Oakwood Villa Suite</h4>
+              <p>Warm linen drapery & custom bouclé seating</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card reveal-fade delay-3" data-category="dining">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Kensington Manor dining room styling">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Dining Area</span>
+              <h4>Kensington Manor</h4>
+              <p>Travertine dining table with bespoke ceramics</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card reveal-fade delay-1" data-category="villa">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Pacific Heights contemporary villa staging">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Luxury Estate</span>
+              <h4>Pacific Heights Residence</h4>
+              <p>Full-estate vacant staging & outdoor terrace</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-card reveal-fade delay-2" data-category="living">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80" alt="SoHo Loft open concept salon staging">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Living Room Staging</span>
+              <h4>SoHo Light-Filled Loft</h4>
+              <p>Curated sculptural lighting & neutral tones</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="portfolio-card reveal-fade delay-3" data-category="dining">
+          <div class="portfolio-card-img">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Tribeca modern kitchen and breakfast bar styling">
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-category-tag">Kitchen & Bar</span>
+              <h4>Tribeca Marble Kitchen</h4>
+              <p>Vignette styling with organic culinary accents</p>
+              <a href="contact.html" class="portfolio-view-btn">
+                Inquire Staging <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Client Endorsements</span>
+        <h2 class="section-title">Trusted by Top Realtors & Owners</h2>
+        <p class="section-desc">
+          Hear how our bespoke staging and interior presentation deliver remarkable market returns and delightful experiences.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal-fade delay-1">
+          <div class="testimonial-body">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “The transformation was incredible. The property looked completely different after staging, and the photography turned out beautifully. We received four competing offers within 72 hours of listing!”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=140&h=140&q=80" alt="Victoria Sterling portrait" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h5>Victoria Sterling</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal-fade delay-2">
+          <div class="testimonial-body">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “HAVEN & HEIR's attention to architectural scale and material finishes is unmatched. They turned an awkward open layout into cohesive, inviting zones that prospective buyers instantly fell in love with.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=140&h=140&q=80" alt="Marcus Thorne portrait" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h5>Marcus Thorne</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal-fade delay-3">
+          <div class="testimonial-body">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              “Staging our family home before listing was the best investment we made. The HAVEN & HEIR team worked with incredible speed and professionalism. Our home sold for $180k over our target reserve.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=140&h=140&q=80" alt="Elena Rostova portrait" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h5>Elena Rostova</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. PROCESS SECTION (01 - 04 Steps)
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section">
+    <div class="container">
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Seamless Methodology</span>
+        <h2 class="section-title">Our 4-Step Staging Process</h2>
+        <p class="section-desc">
+          From initial spatial evaluation to the final champagne-ready reveal, our proven process is designed for effortless execution and maximum return.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="process-card reveal-fade delay-1">
+          <div class="process-number">01</div>
+          <h4>Consultation</h4>
+          <p>We visit your property for an in-depth spatial assessment, analyzing architecture, natural light, target buyer demographics, and marketing objectives.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card reveal-fade delay-2">
+          <div class="process-number">02</div>
+          <h4>Design & Planning</h4>
+          <p>Our stylists create a bespoke mood board and floorplan, selecting custom designer furniture, art, rugs, lighting, and textiles from our private warehouse.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card reveal-fade delay-3">
+          <div class="process-number">03</div>
+          <h4>Staging & Styling</h4>
+          <p>Our white-glove logistics team delivers and installs every piece. Our master stylists style vignettes, fluff pillows, and perfect every sightline.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-card reveal-fade delay-4">
+          <div class="process-number">04</div>
+          <h4>Final Presentation</h4>
+          <p>Your property is 100% photo-ready and primed for open houses. When sold, we handle complete, prompt de-staging without any hassle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FINAL CTA BANNER
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="cta-banner-wrap reveal-fade">
+        <div class="cta-content">
+          <span class="section-subtitle" style="color: #D4BA94;">Get Started Today</span>
+          <h2>Ready to Make Your Property Stand Out?</h2>
+          <p>
+            Let's create a space that captures attention from the very first viewing. Book your consultation today and discover what HAVEN & HEIR can do for your listing.
+          </p>
+          <div class="cta-btn-group">
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fa-regular fa-calendar-check"></i> Book a Consultation
+            </a>
+            <a href="services.html" class="btn btn-outline-light">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. SERVICE MODAL DIALOG
+       ========================================================================== -->
+  <div class="service-modal-backdrop" id="serviceModalBackdrop">
+    <div class="service-modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header-img">
+        <img src="" alt="Service preview modal" id="modalImg">
+      </div>
+      <div class="modal-body">
+        <span class="section-subtitle" id="modalCategory">Service Details</span>
+        <h2 id="modalTitle">Service Title</h2>
+        <p id="modalDesc">Comprehensive service description.</p>
+        <div class="modal-features-grid" id="modalFeatures">
+          <!-- Populated by main.js -->
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="contact.html" class="btn btn-primary">
+            Request Quote for this Service <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       12. FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging">
+            <div class="brand-icon">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <div>
+              <span class="brand-title">HAVEN & HEIR</span>
+              <span class="brand-subtitle">Home Staging & Styling</span>
+            </div>
+          </a>
+          <p>
+            Bespoke home staging and luxury interior styling services designed to reveal every property's ultimate emotional and financial potential.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit our Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit our Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit our Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit our LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit our YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-widget">
+          <h4>Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html?id=vacant"><i class="fa-solid fa-angle-right"></i> Vacant Staging</a></li>
+            <li><a href="service-details.html?id=rental"><i class="fa-solid fa-angle-right"></i> Furniture Rental</a></li>
+            <li><a href="service-details.html?id=interior"><i class="fa-solid fa-angle-right"></i> Interior Styling</a></li>
+            <li><a href="service-details.html?id=photography"><i class="fa-solid fa-angle-right"></i> Photography Styling</a></li>
+            <li><a href="service-details.html?id=openhouse"><i class="fa-solid fa-angle-right"></i> Open House Styling</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info + Subscribe -->
+        <div class="footer-widget">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+1 (800) 456-7890</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>inquire@havenandheir.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>742 Evergreen Terrace, Suite 400, Design District, NY 10012</span>
+            </li>
+          </ul>
+          <form class="newsletter-form footer-subscribe-form" style="margin-top: 20px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to HAVEN & HEIR!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for subscription">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 HAVEN & HEIR Home Staging & Styling. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-preferences.html">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       13. SCROLL TO TOP BUTTON
+       ========================================================================== -->
+  <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Core Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/before-after.js"></script>
+  <script src="js/filter-search.js"></script>
+</body>
+</html>

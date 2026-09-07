@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Staging Packages | HAVEN & HEIR Home Staging</title>
+  <meta name="description" content="Transparent, high-ROI luxury home staging packages and interior styling rates for real estate brokers and homeowners.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- Minimal Brand Header without Public Navbar (as requested) -->
+  <header class="minimal-header">
+    <div class="container">
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+      <div class="minimal-header-actions">
+        <button class="nav-icon-btn theme-toggle-btn" id="navThemeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" id="navRtlToggle" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em;">RTL</span>
+        </button>
+        <a href="index.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.88rem;">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.88rem;">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pricing Main Content -->
+  <main class="section-spacing">
+    <div class="container">
+      
+      <div class="section-header text-center reveal-fade">
+        <span class="section-subtitle centered">Transparent Investment</span>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Tailored Staging Packages</h1>
+        <p class="section-desc">
+          Strategic spatial presentation engineered to maximize buyer emotional attachment and yield 8–15% higher closing sales.
+        </p>
+      </div>
+
+      <!-- Pricing Switcher Toggle -->
+      <div class="pricing-toggle-wrap reveal-fade">
+        <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">Standard 60-Day Lease</span>
+        <div class="toggle-switch-btn" id="pricingToggleBtn" aria-label="Toggle pricing term">
+          <div class="toggle-switch-handle"></div>
+        </div>
+        <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">Extended 90-Day Package <span style="font-size: 0.75rem; color: var(--accent); font-weight: 700;">(Save 15%)</span></span>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-grid">
+        
+        <!-- Package 1: Essential Partial / Occupied -->
+        <div class="pricing-card reveal-fade delay-1">
+          <span class="section-subtitle">Occupied & Styling</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Essential Vignette</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Perfect for occupied residences, partial redesigns, and photography-ready preparation.</p>
+          
+          <div class="pricing-price-wrap">
+            <span class="pricing-amount" id="price-essential">$2,800</span>
+            <span class="pricing-duration">/ project</span>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> 2-Hour spatial walk-through audit</li>
+            <li><i class="fa-solid fa-circle-check"></i> Living, dining & entryway styling</li>
+            <li><i class="fa-solid fa-circle-check"></i> Curated luxury art & soft accents</li>
+            <li><i class="fa-solid fa-circle-check"></i> Photography sightline coordination</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Large furniture delivery</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Outdoor terrace staging</li>
+          </ul>
+
+          <a href="contact.html?service=interior-styling" class="btn btn-secondary" style="width: 100%;">Choose Essential</a>
+        </div>
+
+        <!-- Package 2: Executive Vacant Staging (Featured) -->
+        <div class="pricing-card featured reveal-fade delay-2">
+          <div class="featured-ribbon">Most Popular Package</div>
+          <span class="section-subtitle">Complete Vacant Staging</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Executive Residence</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Full turnkey transformation for vacant penthouses and 2–4 bedroom luxury homes.</p>
+          
+          <div class="pricing-price-wrap">
+            <span class="pricing-amount" id="price-executive" style="color: var(--accent);">$7,500</span>
+            <span class="pricing-duration">/ 60-day lease</span>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> Whole-home architectural floorplan</li>
+            <li><i class="fa-solid fa-circle-check"></i> Living room, dining suite & primary bedroom</li>
+            <li><i class="fa-solid fa-circle-check"></i> Designer sofas, marble plinths & lamps</li>
+            <li><i class="fa-solid fa-circle-check"></i> White-glove delivery, install & de-staging</li>
+            <li><i class="fa-solid fa-circle-check"></i> 60-Day initial rental period with free extension</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> VIP open house launch catering</li>
+          </ul>
+
+          <a href="contact.html?service=vacant-staging" class="btn btn-primary" style="width: 100%;">Select Executive Staging</a>
+        </div>
+
+        <!-- Package 3: Grand Architectural Estate -->
+        <div class="pricing-card reveal-fade delay-3">
+          <span class="section-subtitle">Grand Architectural</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Grand Estate</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Comprehensive styling for luxury mega-mansions, historic estates, and developer model units.</p>
+          
+          <div class="pricing-price-wrap">
+            <span class="pricing-amount" id="price-estate">$16,500</span>
+            <span class="pricing-duration">/ 60-day lease</span>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> 5+ Bedrooms, formal salon & great rooms</li>
+            <li><i class="fa-solid fa-circle-check"></i> High-end museum-grade canvas art curation</li>
+            <li><i class="fa-solid fa-circle-check"></i> Outdoor pool patio & terrace furniture</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bespoke botanical and floral installations</li>
+            <li><i class="fa-solid fa-circle-check"></i> VIP open-house styling & scent diffusers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Stylist on-site during 4K video shoot</li>
+          </ul>
+
+          <a href="contact.html?service=vacant-staging" class="btn btn-secondary" style="width: 100%;">Book Grand Estate</a>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div style="max-width: 800px; margin: 80px auto 0;" class="reveal-fade">
+        <div class="section-header text-center">
+          <span class="section-subtitle centered">Common Questions</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="background-color: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+            <h4 style="font-size: 1.1rem; margin-bottom: 8px;">How quickly can HAVEN & HEIR stage my property?</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0;">
+              Once the staging proposal and deposit are confirmed, our team typically installs within 48 to 72 hours, completing the full setup in a single day.
+            </p>
+          </div>
+
+          <div style="background-color: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+            <h4 style="font-size: 1.1rem; margin-bottom: 8px;">What happens if the property sells before the lease ends?</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0;">
+              Congratulations! Upon escrow ratification and contingency waivers, simply notify us 48 hours in advance, and our white-glove team will promptly de-stage without any hassle.
+            </p>
+          </div>
+
+          <div style="background-color: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+            <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Can buyers purchase the staging furniture with the home?</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0;">
+              Yes! We provide turnkey “as-styled” furniture buyout options directly to interested home buyers through our concierge team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Unified Footer Component -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging">
+            <div class="brand-icon">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <div>
+              <span class="brand-title">HAVEN & HEIR</span>
+              <span class="brand-subtitle">Home Staging & Styling</span>
+            </div>
+          </a>
+          <p>
+            Bespoke home staging and luxury interior styling services designed to reveal every property's ultimate emotional and financial potential.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-widget">
+          <h4>Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html?id=vacant"><i class="fa-solid fa-angle-right"></i> Vacant Staging</a></li>
+            <li><a href="service-details.html?id=rental"><i class="fa-solid fa-angle-right"></i> Furniture Rental</a></li>
+            <li><a href="service-details.html?id=interior"><i class="fa-solid fa-angle-right"></i> Interior Styling</a></li>
+            <li><a href="service-details.html?id=photography"><i class="fa-solid fa-angle-right"></i> Photography Styling</a></li>
+            <li><a href="service-details.html?id=openhouse"><i class="fa-solid fa-angle-right"></i> Open House Styling</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info + Subscribe -->
+        <div class="footer-widget">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-info">
+            <li><i class="fa-solid fa-phone"></i> <span>+1 (800) 456-7890</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>inquire@havenandheir.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span>742 Evergreen Terrace, Suite 400, NY 10012</span></li>
+          </ul>
+          <form class="newsletter-form footer-subscribe-form" style="margin-top: 20px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to HAVEN & HEIR!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for subscription">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 HAVEN & HEIR Home Staging & Styling. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-preferences.html">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Pricing toggle switch handler
+    const pricingToggle = document.getElementById('pricingToggleBtn');
+    if (pricingToggle) {
+      pricingToggle.addEventListener('click', () => {
+        pricingToggle.classList.toggle('active');
+        const isExtended = pricingToggle.classList.contains('active');
+        document.getElementById('price-essential').textContent = isExtended ? '$3,800' : '$2,800';
+        document.getElementById('price-executive').textContent = isExtended ? '$9,800' : '$7,500';
+        document.getElementById('price-estate').textContent = isExtended ? '$21,500' : '$16,500';
+      });
+    }
+  </script>
+</body>
+</html>

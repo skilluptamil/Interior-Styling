@@ -1,0 +1,187 @@
+/* ==========================================================================
+   HAVEN & HEIR - RTL (Right-to-Left) Stylesheet
+   Applied when html[dir="rtl"] is set
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Plus Jakarta Sans', 'Tajawal', 'Cairo', -apple-system, sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  letter-spacing: 0;
+}
+
+/* Scroll to Top Button (Move to Left in RTL) */
+[dir="rtl"] #scrollTopBtn {
+  right: auto;
+  left: 28px;
+}
+
+@media (max-width: 767px) {
+  [dir="rtl"] #scrollTopBtn {
+    left: 20px;
+    right: auto;
+  }
+}
+
+/* Navbar */
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-link:hover,
+[dir="rtl"] .dropdown-link.active {
+  padding-left: 20px;
+  padding-right: 24px;
+}
+
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  [dir="rtl"] .nav-menu {
+    right: auto;
+    left: -100%;
+    transition: left var(--transition-normal);
+  }
+
+  [dir="rtl"] .nav-menu.active {
+    left: 0;
+    right: auto;
+  }
+}
+
+/* Section Subtitle & Headings */
+[dir="rtl"] .section-subtitle::before {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+/* Buttons */
+[dir="rtl"] .btn-link-arrow i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .btn-link-arrow:hover i {
+  transform: rotate(180deg) translateX(4px);
+}
+
+/* Trust Avatars in Hero */
+[dir="rtl"] .trust-avatar {
+  margin-left: 0;
+  margin-right: -12px;
+}
+
+[dir="rtl"] .trust-avatar:first-child {
+  margin-right: 0;
+}
+
+/* Hero Floating Card in Home 2 */
+[dir="rtl"] .hero-floating-stat-card {
+  left: auto;
+  right: -40px;
+}
+
+@media (max-width: 991px) {
+  [dir="rtl"] .hero-floating-stat-card {
+    right: 20px;
+    left: auto;
+  }
+}
+
+/* Before & After Badges */
+[dir="rtl"] .ba-badge.badge-before {
+  left: auto;
+  right: 24px;
+}
+
+[dir="rtl"] .ba-badge.badge-after {
+  right: auto;
+  left: 24px;
+}
+
+[dir="rtl"] .before-img-wrap {
+  border-right: none;
+  border-left: 2px solid #FFFFFF;
+}
+
+/* Split Layout Floating Card */
+[dir="rtl"] .split-floating-experience {
+  right: auto;
+  left: -30px;
+}
+
+@media (max-width: 991px) {
+  [dir="rtl"] .split-floating-experience {
+    left: 20px;
+    right: auto;
+  }
+}
+
+/* Portfolio Card */
+[dir="rtl"] .portfolio-view-btn i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .portfolio-card:hover .portfolio-view-btn i {
+  transform: rotate(180deg) translateX(4px);
+}
+
+/* Blog Search */
+[dir="rtl"] .blog-search-box i {
+  left: auto;
+  right: 16px;
+}
+
+[dir="rtl"] .blog-search-input {
+  padding: 10px 42px 10px 16px;
+}
+
+/* Modals */
+[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 18px;
+}
+
+/* Footer */
+[dir="rtl"] .footer-widget h4::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-links-list a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+/* Admin Dashboard RTL on Tablet/Mobile */
+@media (max-width: 991px) {
+  [dir="rtl"] .admin-sidebar {
+    left: auto;
+    right: -280px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    transition: right var(--transition-normal);
+  }
+
+  [dir="rtl"] .admin-sidebar.open {
+    right: 0;
+    left: auto;
+  }
+}
+
+/* Auth Page RTL adjustments */
+[dir="rtl"] .password-toggle-icon {
+  right: auto !important;
+  left: 16px !important;
+}

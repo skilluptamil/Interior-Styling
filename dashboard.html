@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard & Analytics | HAVEN & HEIR Staging Studio</title>
+  <meta name="description" content="HAVEN & HEIR Staging Studio administrative portal for analytics, staging orders, client management, and inquiries.">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       ADMIN DASHBOARD LAYOUT (No public navbar as requested)
+       ========================================================================== -->
+  <div class="admin-dashboard-layout">
+    
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="admin-sidebar-header">
+        <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging">
+          <div class="brand-icon">
+            <i class="fa-solid fa-house-chimney-window"></i>
+          </div>
+          <div>
+            <span class="brand-title" style="font-size: 1.25rem;">HAVEN & HEIR</span>
+            <span class="brand-subtitle">Studio Admin</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="admin-nav">
+        <div class="admin-nav-item active" data-tab="analytics">
+          <i class="fa-solid fa-chart-pie"></i>
+          <span>Analytics</span>
+        </div>
+
+        <div class="admin-nav-item" data-tab="orders">
+          <i class="fa-solid fa-boxes-packing"></i>
+          <span>Staging Orders</span>
+          <span class="admin-nav-badge">14</span>
+        </div>
+
+        <div class="admin-nav-item" data-tab="users">
+          <i class="fa-solid fa-users"></i>
+          <span>Clients & Brokers</span>
+        </div>
+
+        <div class="admin-nav-item" data-tab="messages">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Inquiries</span>
+          <span class="admin-nav-badge" style="background-color: #D9534F; color: #FFFFFF;">5</span>
+        </div>
+
+        <div style="margin-top: 20px; border-top: 1px solid var(--border-light); padding-top: 16px;">
+          <a href="index.html" class="admin-nav-item" style="color: var(--text-muted);">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Public Site</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="admin-sidebar-footer">
+        <div class="admin-user-profile">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Admin user avatar" class="admin-avatar">
+          <div style="flex-grow: 1;">
+            <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Sophia M.</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Studio Director</div>
+          </div>
+          <a href="login.html" title="Logout" style="color: var(--text-muted); font-size: 0.95rem;"><i class="fa-solid fa-power-off"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Admin Main Body -->
+    <main class="admin-main">
+      
+      <!-- Topbar -->
+      <header class="admin-topbar">
+        <div class="admin-topbar-left">
+          <button id="adminSidebarToggle" class="mobile-toggle" style="display: none;" aria-label="Toggle admin sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <h2 id="adminPageTitle" style="font-size: 1.35rem; margin-bottom: 0;">Analytics & Performance Overview</h2>
+        </div>
+
+        <div class="admin-topbar-right">
+          <div class="admin-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search orders, clients, rooms..." aria-label="Search dashboard">
+          </div>
+
+          <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button class="nav-icon-btn rtl-toggle-btn" id="rtlToggleBtn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span style="font-size: 0.7rem; font-weight: 700;">RTL</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Tab Content Area -->
+      <div class="admin-body">
+        
+        <!-- 1. TAB: ANALYTICS -->
+        <div id="tab-analytics" class="dashboard-tab-content active">
+          <!-- KPI Metrics Cards -->
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-info">
+                <h6>Total Staging Revenue</h6>
+                <div class="kpi-value">$284,500</div>
+                <div class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> +18.4% vs last month</div>
+              </div>
+              <div class="kpi-icon-wrap"><i class="fa-solid fa-vault"></i></div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-info">
+                <h6>Active Staged Homes</h6>
+                <div class="kpi-value">28 Estates</div>
+                <div class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 6 new this week</div>
+              </div>
+              <div class="kpi-icon-wrap"><i class="fa-solid fa-couch"></i></div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-info">
+                <h6>Escrow Conversion Rate</h6>
+                <div class="kpi-value">94.2%</div>
+                <div class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> Avg. 12 days to sell</div>
+              </div>
+              <div class="kpi-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-info">
+                <h6>Total SQ. FT. Styled</h6>
+                <div class="kpi-value">142,800</div>
+                <div class="kpi-trend up"><i class="fa-solid fa-check"></i> Across 18 zip codes</div>
+              </div>
+              <div class="kpi-icon-wrap"><i class="fa-solid fa-vector-square"></i></div>
+            </div>
+          </div>
+
+          <!-- Monthly Staging Volume Chart Widget -->
+          <div class="chart-widget-card">
+            <div class="chart-header">
+              <div>
+                <h4 style="margin-bottom: 2px;">Monthly Staging Contracts (2026)</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0;">Comparative volume across Luxury Estates vs Urban Lofts</p>
+              </div>
+              <div style="display: flex; gap: 16px; font-size: 0.8rem; font-weight: 600;">
+                <span style="color: var(--accent);"><i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Whole Estate Staging</span>
+                <span style="color: var(--sand);"><i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Partial / Styling</span>
+              </div>
+            </div>
+
+            <div class="chart-bars-wrap">
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 65%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 40%;"></div>
+                </div>
+                <span class="chart-bar-label">Jan</span>
+              </div>
+
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 80%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 50%;"></div>
+                </div>
+                <span class="chart-bar-label">Feb</span>
+              </div>
+
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 95%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 70%;"></div>
+                </div>
+                <span class="chart-bar-label">Mar</span>
+              </div>
+
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 75%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 60%;"></div>
+                </div>
+                <span class="chart-bar-label">Apr</span>
+              </div>
+
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 90%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 80%;"></div>
+                </div>
+                <span class="chart-bar-label">May</span>
+              </div>
+
+              <div class="chart-bar-group">
+                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                  <div class="chart-bar-pillar" style="height: 100%;"></div>
+                  <div class="chart-bar-pillar secondary" style="height: 85%;"></div>
+                </div>
+                <span class="chart-bar-label">Jun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. TAB: ORDERS -->
+        <div id="tab-orders" class="dashboard-tab-content">
+          <div class="data-table-card">
+            <div class="table-header-bar">
+              <h4 style="margin-bottom: 0;">Active Staging Bookings</h4>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;" onclick="alert('Create new staging booking order.');">
+                <i class="fa-solid fa-plus"></i> New Staging Order
+              </button>
+            </div>
+            <div style="overflow-x: auto;">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Property / Client</th>
+                    <th>Property Type</th>
+                    <th>Staging Date</th>
+                    <th>Package / Scope</th>
+                    <th>Contract Value</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>The TriBeCa Loft Penthouse</strong>
+                      <div style="font-size: 0.78rem; color: var(--text-muted);">Eleanor Vance (Sotheby's)</div>
+                    </td>
+                    <td>Luxury Penthouse</td>
+                    <td>Sep 08, 2026</td>
+                    <td>Whole Estate Staging (60-Day)</td>
+                    <td>$18,500</td>
+                    <td><span class="status-badge in-progress">In Progress</span></td>
+                    <td><button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;">View</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Oakwood Villa Residence</strong>
+                      <div style="font-size: 0.78rem; color: var(--text-muted);">Marcus Thorne (Apex Living)</div>
+                    </td>
+                    <td>Single Family Estate</td>
+                    <td>Sep 02, 2026</td>
+                    <td>Vacant Staging + Patio</td>
+                    <td>$14,200</td>
+                    <td><span class="status-badge completed">Completed</span></td>
+                    <td><button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;">View</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>740 Park Avenue Suite</strong>
+                      <div style="font-size: 0.78rem; color: var(--text-muted);">Victoria Sterling</div>
+                    </td>
+                    <td>Historic Townhouse</td>
+                    <td>Sep 14, 2026</td>
+                    <td>Photography-Ready Prep</td>
+                    <td>$4,800</td>
+                    <td><span class="status-badge pending">Pending Delivery</span></td>
+                    <td><button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;">View</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>SoHo Designer Loft 4B</strong>
+                      <div style="font-size: 0.78rem; color: var(--text-muted);">Julian Grey (Compass)</div>
+                    </td>
+                    <td>Modern Open Loft</td>
+                    <td>Aug 26, 2026</td>
+                    <td>Furniture Rental (30-Day)</td>
+                    <td>$8,900</td>
+                    <td><span class="status-badge completed">Completed</span></td>
+                    <td><button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;">View</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. TAB: USERS -->
+        <div id="tab-users" class="dashboard-tab-content">
+          <div class="data-table-card">
+            <div class="table-header-bar">
+              <h4 style="margin-bottom: 0;">Registered Brokers & Clients</h4>
+              <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;" onclick="alert('Export client directory as CSV.');">
+                <i class="fa-solid fa-file-export"></i> Export Directory
+              </button>
+            </div>
+            <div style="overflow-x: auto;">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Client Name</th>
+                    <th>Role / Agency</th>
+                    <th>Email Address</th>
+                    <th>Staged Properties</th>
+                    <th>Total Spend</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="display: flex; align-items: center; gap: 12px;">
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="Eleanor Vance" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
+                      <strong>Eleanor Vance</strong>
+                    </td>
+                    <td>Principal Broker • Sotheby's</td>
+                    <td>eleanor.vance@sothebysrealty.com</td>
+                    <td>12 Properties</td>
+                    <td>$142,000</td>
+                    <td><span class="status-badge completed">VIP Partner</span></td>
+                  </tr>
+
+                  <tr>
+                    <td style="display: flex; align-items: center; gap: 12px;">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80" alt="Marcus Thorne" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
+                      <strong>Marcus Thorne</strong>
+                    </td>
+                    <td>Developer • Apex Living</td>
+                    <td>m.thorne@apexliving.io</td>
+                    <td>6 Projects</td>
+                    <td>$88,500</td>
+                    <td><span class="status-badge completed">Active Client</span></td>
+                  </tr>
+
+                  <tr>
+                    <td style="display: flex; align-items: center; gap: 12px;">
+                      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&h=80&q=80" alt="Elena Rostova" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
+                      <strong>Elena Rostova</strong>
+                    </td>
+                    <td>Private Homeowner</td>
+                    <td>elena.rostova@gmail.com</td>
+                    <td>1 Property</td>
+                    <td>$16,800</td>
+                    <td><span class="status-badge in-progress">Current Staging</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. TAB: MESSAGES -->
+        <div id="tab-messages" class="dashboard-tab-content">
+          <div class="data-table-card">
+            <div class="table-header-bar">
+              <h4 style="margin-bottom: 0;">Consultation Inquiries & Leads (5 Unread)</h4>
+            </div>
+            <div class="inbox-list">
+              <div class="inbox-item unread">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100&q=80" alt="Victoria Sterling" class="inbox-avatar">
+                <div class="inbox-content">
+                  <div class="inbox-content-header">
+                    <h5>Victoria Sterling • Sotheby's</h5>
+                    <span class="inbox-date">10 mins ago</span>
+                  </div>
+                  <p class="inbox-preview"><strong>New Penthouse Listing on 5th Ave:</strong> We have a 5,400 sq. ft. duplex penthouse needing vacant staging by next Wednesday for photo shoot. Can you send proposal?</p>
+                </div>
+              </div>
+
+              <div class="inbox-item unread">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80" alt="Julian Grey" class="inbox-avatar">
+                <div class="inbox-content">
+                  <div class="inbox-content-header">
+                    <h5>Julian Grey • Compass Real Estate</h5>
+                    <span class="inbox-date">2 hours ago</span>
+                  </div>
+                  <p class="inbox-preview"><strong>Open House Launch Coordination:</strong> We scheduled the VIP twilight broker launch for October 2nd. Let's arrange the floral arrangements and bar vignette styling.</p>
+                </div>
+              </div>
+
+              <div class="inbox-item">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80" alt="Eleanor Vance" class="inbox-avatar">
+                <div class="inbox-content">
+                  <div class="inbox-content-header">
+                    <h5>Eleanor Vance</h5>
+                    <span class="inbox-date">Yesterday</span>
+                  </div>
+                  <p class="inbox-preview"><strong>De-Staging Confirmation:</strong> The TriBeCa property is officially in escrow with contingencies waived. We are ready to schedule de-staging for the 18th.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

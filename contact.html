@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Property Consultation | HAVEN & HEIR Home Staging</title>
+  <meta name="description" content="Book a luxury home staging consultation with HAVEN & HEIR. Inquire about vacant staging, furniture rental, and interior styling services.">
+  <meta name="keywords" content="contact home staging, property staging consultation, quote for staging, interior styling inquiry">
+  <meta name="author" content="HAVEN & HEIR Staging Studio">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging Home">
+        <div class="brand-icon">
+          <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div>
+          <span class="brand-title">HAVEN & HEIR</span>
+          <span class="brand-subtitle">Home Staging & Styling</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Home <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link">Home 1 – Main Landing</a>
+            <a href="home-2.html" class="dropdown-link">Home 2 – Interior Styling</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+
+        <!-- Mobile Drawer Controls -->
+        <div class="nav-mobile-actions">
+          <div class="mobile-controls-row">
+            <button class="nav-icon-btn theme-toggle-btn" id="mobileThemeToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-moon"></i> <span>Theme</span>
+            </button>
+            <button class="nav-icon-btn rtl-toggle-btn" id="mobileRtlToggle" style="flex: 1; border-radius: var(--radius-sm); height: 40px; gap: 8px;">
+              <i class="fa-solid fa-globe"></i> <span>RTL</span>
+            </button>
+          </div>
+          <a href="login.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+            <i class="fa-regular fa-user"></i> Client Sign In
+          </a>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 4px;">
+            <i class="fa-regular fa-calendar-check"></i> Get a Consultation
+          </a>
+        </div>
+      </nav>
+
+      <!-- Right Navbar Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light Mode) -->
+        <button class="nav-icon-btn theme-toggle-btn" id="navThemeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- RTL / LTR Layout Switcher -->
+        <button class="nav-icon-btn rtl-toggle-btn" id="navRtlToggle" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em;">RTL</span>
+        </button>
+
+        <!-- Login / Client Portal Button -->
+        <a href="login.html" class="nav-login-btn" title="Client Sign In" aria-label="Client Sign In">
+          <i class="fa-regular fa-user"></i>
+          <span>Sign In</span>
+        </a>
+
+        <!-- Consultation CTA Button -->
+        <a href="contact.html" class="btn btn-primary nav-cta-btn">
+          <i class="fa-regular fa-calendar-check"></i> <span>Get a Consultation</span>
+        </a>
+        
+        <!-- Mobile Toggle Hamburger Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. INNER HERO (With Luxury Photographic Background)
+       ========================================================================== -->
+  <section class="inner-hero inner-hero-contact">
+    <div class="container">
+      <span class="section-subtitle centered">Get In Touch</span>
+      <h1>Book a Property Consultation</h1>
+      <p class="lead" style="max-width: 680px; margin: 0 auto;">
+        Connect with our principal staging directors to discuss your property timeline, staging requirements, and custom proposal.
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span class="active">Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. CONTACT GRID & PROPERTY ENQUIRY FORM
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Left: Contact Details -->
+        <div class="contact-info-panel reveal-fade">
+          <span class="section-subtitle">Reach Our Studio</span>
+          <h2>Let's Discuss Your Staging Vision</h2>
+          <p class="section-desc">
+            We partner with premier realtors, property developers, and homeowners to deliver high-impact spatial transformations.
+          </p>
+
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-card-text">
+              <h4>Direct Inquiries</h4>
+              <p>+1 (800) 456-7890</p>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Mon–Fri, 8:30 AM – 6:30 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-card-text">
+              <h4>Email Communications</h4>
+              <p>inquire@havenandheir.com</p>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Response within 12 business hours</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-card-text">
+              <h4>Design Studio & Warehouse</h4>
+              <p>742 Evergreen Terrace, Suite 400</p>
+              <p>Design District, NY 10012</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-card-text">
+              <h4>Business Hours</h4>
+              <p>Monday – Friday: 8:30 AM – 6:30 PM</p>
+              <p>Saturday: Private Consultations by Appointment</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Validated Property Enquiry Form -->
+        <div class="enquiry-form-card reveal-fade delay-2">
+          <div class="section-header" style="margin-bottom: 28px;">
+            <span class="section-subtitle">Property Details</span>
+            <h3 style="font-size: 1.7rem;">Property Enquiry & Staging Request</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">Fill out the specifications below for an expedited staging estimate.</p>
+          </div>
+
+          <!-- Toast Notifications -->
+          <div id="formSuccessToast" class="form-toast success">
+            <i class="fa-solid fa-circle-check" style="font-size: 1.3rem;"></i>
+            <div>
+              <strong>Thank you for your enquiry!</strong><br>
+              Our lead creative stylist will review your property specifications and reach out within 12 hours.
+            </div>
+          </div>
+
+          <div id="formErrorToast" class="form-toast error">
+            <i class="fa-solid fa-triangle-exclamation" style="font-size: 1.3rem;"></i>
+            <div>
+              <strong>Please check your form details:</strong><br>
+              Ensure all required fields are filled correctly with valid formats.
+            </div>
+          </div>
+
+          <form id="propertyEnquiryForm" novalidate>
+            <!-- Row 1: Full Name & Email -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                <div class="invalid-feedback">Please enter your full name (letters only).</div>
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="emailAddress" class="form-control" placeholder="e.g. eleanor@domain.com" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+            </div>
+
+            <!-- Row 2: Phone & Property Type -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="e.g. +1 (555) 234-5678" required>
+                <div class="invalid-feedback">Please enter a valid contact number.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="propertyType" class="form-label">Property Type <span class="required">*</span></label>
+                <select id="propertyType" class="form-control" required>
+                  <option value="" disabled selected>Select Property Type</option>
+                  <option value="luxury-penthouse">Luxury Penthouse</option>
+                  <option value="single-family">Single Family Residence</option>
+                  <option value="modern-loft">Modern Open Loft</option>
+                  <option value="historic-brownstone">Historic Brownstone / Townhouse</option>
+                  <option value="high-rise-condo">High-Rise Condominium</option>
+                  <option value="model-unit">Developer Model Unit</option>
+                </select>
+                <div class="invalid-feedback">Please select a property type.</div>
+              </div>
+            </div>
+
+            <!-- Row 3: Location & Service Required -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="propertyLocation" class="form-label">Property Location / City <span class="required">*</span></label>
+                <input type="text" id="propertyLocation" class="form-control" placeholder="e.g. Tribeca, New York, NY" required>
+                <div class="invalid-feedback">Please provide the property address or city.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="serviceRequired" class="form-label">Service Required <span class="required">*</span></label>
+                <select id="serviceRequired" class="form-control" required>
+                  <option value="" disabled selected>Select Required Service</option>
+                  <option value="vacant-staging">Vacant Home Staging (Turnkey)</option>
+                  <option value="furniture-rental">Furniture & Décor Rental</option>
+                  <option value="interior-styling">Interior Styling & Redesign</option>
+                  <option value="photography-ready">Photography-Ready Styling</option>
+                  <option value="consultation">2-Hour Spatial Consultation</option>
+                  <option value="open-house">VIP Open House Launch</option>
+                </select>
+                <div class="invalid-feedback">Please choose a styling service.</div>
+              </div>
+            </div>
+
+            <!-- Row 4: Size, Date & Budget -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="propertySize" class="form-label">Property Size (Approx.)</label>
+                <select id="propertySize" class="form-control">
+                  <option value="" disabled selected>Select Square Footage</option>
+                  <option value="under-1500">Under 1,500 sq. ft.</option>
+                  <option value="1500-3000">1,500 – 3,000 sq. ft.</option>
+                  <option value="3000-5000">3,000 – 5,000 sq. ft.</option>
+                  <option value="5000-plus">5,000+ sq. ft. (Luxury Estate)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="consultationDate" class="form-label">Target Staging Date</label>
+                <input type="date" id="consultationDate" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="budgetRange" class="form-label">Estimated Budget Range <span class="required">*</span></label>
+              <select id="budgetRange" class="form-control" required>
+                <option value="" disabled selected>Select Budget Range</option>
+                <option value="tier1">$2,500 – $5,000 (Consultation & Partial Staging)</option>
+                <option value="tier2">$5,000 – $10,000 (Full Apartment / Condo Staging)</option>
+                <option value="tier3">$10,000 – $20,000 (Luxury Home Whole-House Staging)</option>
+                <option value="tier4">$20,000+ (Grand Architectural Estate / Multi-Month)</option>
+              </select>
+              <div class="invalid-feedback">Please select an estimated budget range.</div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="clientMessage" class="form-label">Project Details & Key Rooms <span class="required">*</span></label>
+              <textarea id="clientMessage" class="form-control" placeholder="Describe the property layout, key focal areas, timeline, and any specific aesthetic preferences..." required></textarea>
+              <div class="invalid-feedback">Please enter a description of at least 10 characters.</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <i class="fa-regular fa-paper-plane"></i> Submit Property Consultation Request
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Studio Location Map -->
+      <div class="map-card-wrapper reveal-fade">
+        <iframe 
+          title="HAVEN & HEIR Studio Location Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.2382103815343!2d-74.00168392346766!3d40.72488343621748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598be3007f3d%3A0xe9634289895c1e09!2sSoHo%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. FINAL CTA BANNER
+       ========================================================================== -->
+  <section class="section-spacing bg-secondary-section">
+    <div class="container">
+      <div class="cta-banner-wrap reveal-fade">
+        <div class="cta-content">
+          <span class="section-subtitle" style="color: #D4BA94;">Transform Your Listing</span>
+          <h2>Let's Bring Your Property's Potential to Life</h2>
+          <p>
+            Join the hundreds of realtors and homeowners who rely on HAVEN & HEIR for stress-free, award-winning staging execution.
+          </p>
+          <div class="cta-btn-group">
+            <a href="services.html" class="btn btn-outline-light">
+              Explore Our Services
+            </a>
+            <a href="index.html#portfolioSection" class="btn btn-primary">
+              View Project Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="HAVEN & HEIR Home Staging">
+            <div class="brand-icon">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <div>
+              <span class="brand-title">HAVEN & HEIR</span>
+              <span class="brand-subtitle">Home Staging & Styling</span>
+            </div>
+          </a>
+          <p>
+            Bespoke home staging and luxury interior styling services designed to reveal every property's ultimate emotional and financial potential.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html?id=vacant"><i class="fa-solid fa-angle-right"></i> Vacant Staging</a></li>
+            <li><a href="service-details.html?id=rental"><i class="fa-solid fa-angle-right"></i> Furniture Rental</a></li>
+            <li><a href="service-details.html?id=interior"><i class="fa-solid fa-angle-right"></i> Interior Styling</a></li>
+            <li><a href="service-details.html?id=photography"><i class="fa-solid fa-angle-right"></i> Photography Styling</a></li>
+            <li><a href="service-details.html?id=openhouse"><i class="fa-solid fa-angle-right"></i> Open House Styling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-info">
+            <li><i class="fa-solid fa-phone"></i> <span>+1 (800) 456-7890</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>inquire@havenandheir.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span>742 Evergreen Terrace, Suite 400, NY 10012</span></li>
+          </ul>
+          <form class="newsletter-form footer-subscribe-form" style="margin-top: 20px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to HAVEN & HEIR!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for subscription">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 HAVEN & HEIR Home Staging & Styling. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-preferences.html">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       6. SCROLL TO TOP BUTTON
+       ========================================================================== -->
+  <button id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact-validation.js"></script>
+</body>
+</html>

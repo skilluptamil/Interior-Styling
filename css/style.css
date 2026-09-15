@@ -1184,7 +1184,7 @@ p.lead {
 }
 
 .service-card-body {
-  padding: 28px 24px;
+  padding: 26px 22px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -1204,33 +1204,57 @@ p.lead {
 }
 
 .service-card-body h3 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
   margin-bottom: 12px;
+  min-height: 52px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .service-card-body p {
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: 0.92rem;
+  line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
 }
 
 .service-features-list {
-  margin-bottom: 24px;
+  margin-top: auto;
+  margin-bottom: 22px;
+  padding: 0;
+  list-style: none;
 }
 
 .service-features-list li {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.88rem;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.84rem;
+  line-height: 1.45;
   color: var(--text-secondary);
   margin-bottom: 8px;
 }
 
+.service-features-list li:last-child {
+  margin-bottom: 0;
+}
+
 .service-features-list li i {
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 14px;
+  text-align: center;
+}
+
+.service-features-list li span {
+  flex: 1;
+}
+
+.service-card .btn-link-arrow {
+  margin-top: auto;
 }
 
 /* ==========================================================================
@@ -3111,9 +3135,10 @@ textarea.form-control {
 
 .pricing-feature-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   font-size: 0.92rem;
+  line-height: 1.5;
   color: var(--text-secondary);
   margin-bottom: 14px;
 }
@@ -3121,6 +3146,12 @@ textarea.form-control {
 .pricing-feature-list li i {
   color: var(--accent);
   font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 3.5px;
+}
+
+.pricing-feature-list li span {
+  flex: 1;
 }
 
 .pricing-feature-list li.disabled {

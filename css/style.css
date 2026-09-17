@@ -123,6 +123,8 @@ a {
 
 ul, ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 button, input, textarea, select {
@@ -1457,7 +1459,7 @@ p.lead {
 
 .portfolio-card-img {
   position: relative;
-  height: 340px;
+  height: 360px;
   overflow: hidden;
 }
 
@@ -1475,47 +1477,66 @@ p.lead {
 .portfolio-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(20, 19, 18, 0.88) 0%, rgba(20, 19, 18, 0.2) 60%, transparent 100%);
+  background: linear-gradient(180deg, rgba(15, 14, 13, 0.15) 0%, rgba(15, 14, 13, 0.55) 40%, rgba(15, 14, 13, 0.95) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 28px;
+  padding: 26px 22px;
   color: #FFFFFF;
-  opacity: 0.95;
-  transition: opacity var(--transition-normal);
+  transition: all var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+  background: linear-gradient(180deg, rgba(15, 14, 13, 0.25) 0%, rgba(15, 14, 13, 0.65) 40%, rgba(15, 14, 13, 0.98) 100%);
 }
 
 .portfolio-category-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 6px;
+  color: #F5EBE1;
+  background: rgba(20, 19, 18, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 168, 128, 0.55);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .portfolio-card-overlay h4 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
 }
 
 .portfolio-card-overlay p {
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 16px;
+  line-height: 1.45;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
 }
 
 .portfolio-view-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 700;
   color: #FFFFFF;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .portfolio-view-btn i {
@@ -1688,6 +1709,9 @@ p.lead {
   text-align: center;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .cta-content {
@@ -1695,17 +1719,27 @@ p.lead {
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cta-banner-wrap h2 {
   color: #FFFFFF;
   margin-bottom: 18px;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .cta-banner-wrap p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.15rem;
+  line-height: 1.6;
   margin-bottom: 32px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .cta-btn-group {
@@ -1713,6 +1747,14 @@ p.lead {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cta-btn-group .btn {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
 }
 
 /* ==========================================================================
@@ -2078,6 +2120,11 @@ p.lead {
   font-size: 0.92rem;
   margin-bottom: 20px;
   flex-grow: 1;
+}
+
+.blog-card .btn-link-arrow {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .pagination-wrapper {
@@ -2710,6 +2757,43 @@ textarea.form-control {
   font-weight: 700;
 }
 
+.admin-sidebar-close {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.admin-sidebar-close:hover {
+  color: var(--accent);
+  background-color: var(--accent-light);
+}
+
+.admin-sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 19, 18, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.admin-sidebar-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .admin-sidebar-footer {
   padding: 20px 24px;
   border-top: 1px solid var(--border-light);
@@ -2720,6 +2804,7 @@ textarea.form-control {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  min-width: 0;
 }
 
 .admin-topbar {
@@ -2736,6 +2821,13 @@ textarea.form-control {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
+}
+
+.admin-topbar-left h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0;
+  line-height: 1.25;
 }
 
 .admin-search {
@@ -2765,7 +2857,13 @@ textarea.form-control {
 .admin-topbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+}
+
+.admin-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .admin-user-profile {
@@ -2873,6 +2971,13 @@ textarea.form-control {
   margin-bottom: 24px;
 }
 
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .chart-bars-wrap {
   display: flex;
   align-items: flex-end;
@@ -2889,6 +2994,13 @@ textarea.form-control {
   gap: 8px;
   height: 100%;
   justify-content: flex-end;
+}
+
+.chart-bar-pillars {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  height: 160px;
 }
 
 .chart-bar-pillar {
@@ -3898,19 +4010,41 @@ textarea.form-control {
   flex-wrap: wrap;
   gap: 28px;
   box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.service-cta-banner-box > div {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .service-cta-banner-box h3 {
   font-size: 1.8rem;
+  line-height: 1.3;
   margin-bottom: 8px;
   color: var(--text-primary);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .service-cta-banner-box p {
   font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-secondary);
   margin-bottom: 0;
   max-width: 600px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.service-cta-banner-box .btn {
+  padding: 16px 28px;
+  font-size: 1rem;
 }
 
 /* ==========================================================================

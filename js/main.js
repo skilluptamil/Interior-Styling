@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatsCounter();
   initModals();
   initScrollToTop();
+  initNewsletterForms();
 });
 
 /* ==========================================================================
@@ -397,3 +398,50 @@ function initScrollToTop() {
     });
   });
 }
+
+/* ==========================================================================
+   9. NEWSLETTER SUBSCRIPTION (Case-Insensitive Email Validation)
+   ========================================================================== */
+function initNewsletterForms() {
+  // Case-insensitive email regex accepting user@gmail.com, user@GMAIL.COM, user@Gmail.com
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/i;
+
+  document.querySelectorAll('.newsletter-form, .footer-subscribe-form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = form.querySelector('input[type="email"], .newsletter-input');
+      if (!input) return;
+
+      const emailVal = input.value.trim();
+      if (!emailVal) {
+        alert('Please enter your email address.');
+        input.focus();
+        return;
+      }
+
+      if (!emailRegex.test(emailVal)) {
+        alert('Please enter a valid email format (e.g. name@domain.com).');
+        input.focus();
+        return;
+      }
+
+      const btn = form.querySelector('button[type="submit"], .newsletter-btn');
+      const originalHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+      }
+
+      alert('Thank you for subscribing to HAVEN & HEIR!');
+      form.reset();
+
+      if (btn) {
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = originalHtml;
+        }, 2500);
+      }
+    });
+  });
+}
+

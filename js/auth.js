@@ -46,18 +46,120 @@ function initPasswordToggles() {
   });
 }
 
+// Case-insensitive RFC-compliant email regex: accepts user@gmail.com, user@GMAIL.COM, user@Gmail.com
+const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/i;
+
+function setValid(input) {
+  input.classList.remove('is-invalid');
+  input.classList.add('is-valid');
+}
+
+function setInvalid(input, msg) {
+  input.classList.remove('is-valid');
+  input.classList.add('is-invalid');
+  const parent = input.closest('.form-group') || input.parentElement;
+  const feedback = parent.querySelector('.invalid-feedback');
+  if (feedback && msg) {
+    feedback.textContent = msg;
+  }
+}
+
+function clearState(input) {
+  input.classList.remove('is-valid', 'is-invalid');
+}
+
 function initAuthForms() {
   const loginForm = document.getElementById('loginForm');
   const registerForm = document.getElementById('registerForm');
 
+  const loginEmail = document.getElementById('loginEmail');
+  const loginPassword = document.getElementById('loginPassword');
+
+  const regName = document.getElementById('regName');
+  const regEmail = document.getElementById('regEmail');
+  const regPassword = document.getElementById('regPassword');
+
+  const validateLoginEmail = () => {
+    if (!loginEmail) return true;
+    const val = loginEmail.value.trim();
+    if (!val) {
+      setInvalid(loginEmail, 'Please enter your email address.');
+      return false;
+    }
+    if (!emailRegex.test(val)) {
+      setInvalid(loginEmail, 'Please enter a valid email format (e.g. name@domain.com).');
+      return false;
+    }
+    setValid(loginEmail);
+    return true;
+  };
+
+  const validateLoginPassword = () => {
+    if (!loginPassword) return true;
+    const val = loginPassword.value.trim();
+    if (!val) {
+      setInvalid(loginPassword, 'Please enter your password.');
+      return false;
+    }
+    setValid(loginPassword);
+    return true;
+  };
+
+  const validateRegName = () => {
+    if (!regName) return true;
+    const val = regName.value.trim();
+    if (!val) {
+      setInvalid(regName, 'Please enter your full name.');
+      return false;
+    }
+    setValid(regName);
+    return true;
+  };
+
+  const validateRegEmail = () => {
+    if (!regEmail) return true;
+    const val = regEmail.value.trim();
+    if (!val) {
+      setInvalid(regEmail, 'Please enter your work or personal email.');
+      return false;
+    }
+    if (!emailRegex.test(val)) {
+      setInvalid(regEmail, 'Please enter a valid email format (e.g. name@domain.com).');
+      return false;
+    }
+    setValid(regEmail);
+    return true;
+  };
+
+  const validateRegPassword = () => {
+    if (!regPassword) return true;
+    const val = regPassword.value.trim();
+    if (!val) {
+      setInvalid(regPassword, 'Please create a password.');
+      return false;
+    }
+    if (val.length < 8) {
+      setInvalid(regPassword, 'Password must be at least 8 characters long.');
+      return false;
+    }
+    setValid(regPassword);
+    return true;
+  };
+
+  if (loginEmail) loginEmail.addEventListener('input', validateLoginEmail);
+  if (loginPassword) loginPassword.addEventListener('input', validateLoginPassword);
+
+  if (regName) regName.addEventListener('input', validateRegName);
+  if (regEmail) regEmail.addEventListener('input', validateRegEmail);
+  if (regPassword) regPassword.addEventListener('input', validateRegPassword);
+
   if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const email = document.getElementById('loginEmail').value.trim();
-      const pass = document.getElementById('loginPassword').value.trim();
+      const isEmailValid = validateLoginEmail();
+      const isPassValid = validateLoginPassword();
 
-      if (!email || !pass) {
-        alert('Please fill in all login fields.');
+      if (!isEmailValid || !isPassValid) {
         return;
       }
 
@@ -78,12 +180,11 @@ function initAuthForms() {
   if (registerForm) {
     registerForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('regName').value.trim();
-      const email = document.getElementById('regEmail').value.trim();
-      const pass = document.getElementById('regPassword').value.trim();
+      const isNameValid = validateRegName();
+      const isEmailValid = validateRegEmail();
+      const isPassValid = validateRegPassword();
 
-      if (!name || !email || !pass) {
-        alert('Please complete all registration fields.');
+      if (!isNameValid || !isEmailValid || !isPassValid) {
         return;
       }
 

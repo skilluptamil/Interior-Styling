@@ -34,6 +34,9 @@
             <span class="brand-subtitle">Studio Admin</span>
           </div>
         </a>
+        <button id="adminSidebarCloseBtn" class="admin-sidebar-close" aria-label="Close sidebar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
 
       <nav class="admin-nav">
@@ -79,18 +82,21 @@
       </div>
     </aside>
 
+    <!-- Admin Sidebar Backdrop for Mobile/Tablet -->
+    <div class="admin-sidebar-backdrop" id="adminSidebarBackdrop"></div>
+
     <!-- Admin Main Body -->
     <main class="admin-main">
       
       <!-- Topbar -->
       <header class="admin-topbar">
         <div class="admin-topbar-left">
-          <button id="adminSidebarToggle" class="mobile-toggle" style="display: none;" aria-label="Toggle admin sidebar">
+          <button id="adminSidebarToggle" class="mobile-toggle" aria-label="Toggle admin sidebar">
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <h2 id="adminPageTitle" style="font-size: 1.35rem; margin-bottom: 0;">Analytics & Performance Overview</h2>
+          <h2 id="adminPageTitle">Analytics & Performance Overview</h2>
         </div>
 
         <div class="admin-topbar-right">
@@ -99,13 +105,15 @@
             <input type="text" placeholder="Search orders, clients, rooms..." aria-label="Search dashboard">
           </div>
 
-          <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
-            <i class="fa-solid fa-moon"></i>
-          </button>
+          <div class="admin-topbar-actions">
+            <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
 
-          <button class="nav-icon-btn rtl-toggle-btn" id="rtlToggleBtn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
-            <span style="font-size: 0.7rem; font-weight: 700;">RTL</span>
-          </button>
+            <button class="nav-icon-btn rtl-toggle-btn" id="rtlToggleBtn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+              <span style="font-size: 0.7rem; font-weight: 700;">RTL</span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -160,7 +168,7 @@
                 <h4 style="margin-bottom: 2px;">Monthly Staging Contracts (2026)</h4>
                 <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0;">Comparative volume across Luxury Estates vs Urban Lofts</p>
               </div>
-              <div style="display: flex; gap: 16px; font-size: 0.8rem; font-weight: 600;">
+              <div class="chart-legend">
                 <span style="color: var(--accent);"><i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Whole Estate Staging</span>
                 <span style="color: var(--sand);"><i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Partial / Styling</span>
               </div>
@@ -168,7 +176,7 @@
 
             <div class="chart-bars-wrap">
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 65%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 40%;"></div>
                 </div>
@@ -176,7 +184,7 @@
               </div>
 
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 80%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 50%;"></div>
                 </div>
@@ -184,7 +192,7 @@
               </div>
 
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 95%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 70%;"></div>
                 </div>
@@ -192,7 +200,7 @@
               </div>
 
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 75%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 60%;"></div>
                 </div>
@@ -200,7 +208,7 @@
               </div>
 
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 90%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 80%;"></div>
                 </div>
@@ -208,7 +216,7 @@
               </div>
 
               <div class="chart-bar-group">
-                <div style="display: flex; gap: 6px; align-items: flex-end; height: 160px;">
+                <div class="chart-bar-pillars">
                   <div class="chart-bar-pillar" style="height: 100%;"></div>
                   <div class="chart-bar-pillar secondary" style="height: 85%;"></div>
                 </div>
@@ -227,7 +235,7 @@
                 <i class="fa-solid fa-plus"></i> New Staging Order
               </button>
             </div>
-            <div style="overflow-x: auto;">
+            <div class="table-responsive">
               <table class="custom-table">
                 <thead>
                   <tr>
@@ -307,7 +315,7 @@
                 <i class="fa-solid fa-file-export"></i> Export Directory
               </button>
             </div>
-            <div style="overflow-x: auto;">
+            <div class="table-responsive">
               <table class="custom-table">
                 <thead>
                   <tr>

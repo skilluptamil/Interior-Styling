@@ -25,7 +25,8 @@ function initContactFormValidation() {
 
   // Validation Rules
   const nameRegex = /^[a-zA-Z\u00C0-\u024F\u0600-\u06FF\s'.\-]{2,50}$/;
-  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+  // Case-insensitive RFC-compliant email regex: accepts user@gmail.com, user@GMAIL.COM, user@Gmail.com
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/i;
   const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{2,5}[-\s\.]?[0-9]{2,5}[-\s\.]?[0-9]{2,9}$/;
 
   const setValid = (input) => {

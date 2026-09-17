@@ -64,9 +64,9 @@
 
       <!-- Notify Me Form -->
       <div style="max-width: 460px; margin: 0 auto 40px;">
-        <form onsubmit="event.preventDefault(); alert('Thank you! You will be the first VIP to receive our private catalog invitation.'); this.reset();" style="display: flex; gap: 8px;">
-          <input type="email" class="form-control" placeholder="Enter your VIP broker email..." required style="background-color: var(--bg-card);">
-          <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+        <form class="newsletter-form" style="display: flex; gap: 8px;">
+          <input type="email" class="form-control newsletter-input" placeholder="Enter your VIP broker email..." required style="background-color: var(--bg-card);">
+          <button type="submit" class="btn btn-primary newsletter-btn" style="white-space: nowrap;">
             <i class="fa-solid fa-bell"></i> Notify Me
           </button>
         </form>
